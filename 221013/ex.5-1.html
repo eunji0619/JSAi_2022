@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>구조적선택자1</title>
+    <style>
+        p:first-child{ /*last-child = 각요소에 마지막 p에 적용*/
+            /*각요소에 첫번째 p에 적용이 됨*/
+            color: red;
+            padding: 5px;
+            background-color: beige;
+        }
+        span p:first-child{ /*span안에 있는 첫번째 p만 적용*/
+            color: red;
+            padding: 5px;
+            background-color: beige;
+        } 
+        p:last-child{
+            color: aquamarine;
+            padding: 5px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>첫번째 입니다.</p>
+        <p>두번째 입니다.</p>
+        <p>세번째 입니다.</p>
+    </div>
+    <span>
+        <p>넷번째 입니다.</p>
+        <p>다섯번째 입니다.</p>
+        <p>여섯번째 입니다.</p>
+    </span>
+</body>
+</html>

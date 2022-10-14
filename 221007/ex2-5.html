@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form 연습</title>
+</head>
+
+<body>
+   <div><a href="/ex_home.html"><img src="/img/logo.png" alt="html 로고사진" width="50" height="50"></a></div>
+   
+    <h2>가입양식</h2>
+    <form action="#">
+        <label for="name">
+            성함 :
+            <input type="text" pattern="[가-힣]{2}|[가-힣]{3}" id=name>
+        </label><br>
+
+        <label for="phonenum">
+            전화번호 :
+            <input type="tel" pattern="[0-9]{10}" id=phonenum>
+        </label><br>
+
+        <label for="num">
+            주민번호 :
+            <input type="text" pattern="[0-9]{6} - [0-9]{7}" id=num>
+        </label><br>
+       
+        <label for="email">
+            이메일 주소 :
+            <input type="email" id=email>
+        </label><br>
+        
+        <label for="address">
+            주소 :
+            <input type="text" id=address>
+        </label><br>
+        
+        <label for="pw">
+            비밀번호 :
+            <input type="password" pattern="[&#00-&#255]|[a-zA-Z]" minlength="10" id=pw>
+        </label><br>
+        
+        <label for="comment">
+            하고싶은 말 : <textarea></textarea>
+        <!--<input type="textarea" id=comment>-->
+        </label><br>
+
+        <label for="subdate">
+            제출날짜 :
+            <input type="date" id=subdate>
+        </label><br>
+
+        <input type="submit">
+        
+    </form>
+    
+    <h2>My Form</h2>
+    <form action="#">
+       <img src="/img/logo1.png" alt="마마무 로고사진"><br>
+       
+        <label for="name">
+           Username :
+            <input type="text" pattern="[가-힣]{2}|[가-힣]{3}" id = name>
+        </label><br>
+        
+        <label for="pw">
+           Password : 
+            <input type="password" id= pw>
+        </label><br>
+        
+        <p><label for="check">
+            <input type="checkbox" id= check>
+           I'm not a robot.
+        </label></p>
+        
+        <input type="submit" value = "sign in">
+        
+    </form>
+    
+</body></html>

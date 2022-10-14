@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>예제2</title>
+    <style>
+        div{
+            background-color: red;
+            width: 90px;
+            height: 100px;
+            border-radius: 100%;
+            animation:move 1s infinite alternate;
+        /*infinite alternate = alternate를 쓰면 왕복*/
+            
+        }
+        @keyframes move{
+            from{
+                transform: translate(30px,0px);
+/*                transition-timing-function: ease;*/
+            }98%{
+                transform: translate(30px,290px);
+                width: 95px;
+                height: 90px;
+            }
+            
+            to{
+                transform: translate(30px,300px);
+                width: 100px;
+                height: 90px;
+/*                transform: translate(30px,0px);                */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

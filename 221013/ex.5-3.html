@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>가상선택자3</title>
+    <style>
+        ul{
+            list-style-type: none
+        }
+        p:nth-child(3){
+        /*type을 따지지않고 3번째 요소를 가르켜 - 3번째요소배경 노랑*/
+            background-color: yellow;
+        }
+        p:nth-of-type(3){
+        /*type을 따져서 p타입중 3번째를 가르켜 - 4번째요소에 빨간글자*/
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<!--div>p{번째 요소입니다.}*6-->
+   <div><a href="/ex_home.html"><img src="/img/logo.png" alt="html 로고사진" width="50" height="50"></a></div>
+    <ul>
+        <li>1번째 요소입니다.</li>
+        <p>2번째 요소입니다.</p>
+        <p>3번째 요소입니다.</p>
+        <p>4번째 요소입니다.</p>
+        <p>5번째 요소입니다.</p>
+        <p>6번째 요소입니다.</p>
+    </ul>
+</body>
+</html>

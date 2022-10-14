@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    <style>
+        .box{
+            background-color: aqua;
+            width: 100px;    
+            height: 100px;
+        }
+        .box:hover{
+            background-color: beige;
+            width: 200px;
+            height: 200px;
+            transform: rotate(45deg);
+        }
+        .bt{
+            display: flex;
+            text-decoration: none;
+        }
+        .bt div{
+            display: flex;
+            width: 100px;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+            background-color:indianred;
+            margin-right: 10px;
+            color: #ffffff;
+        }
+        .bt div:hover{
+            background-color: blue;
+            text-decoration: underline;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div></div>
+    </div><br>
+    
+    <div class="bt">
+        <div>Company</div>
+        <div>Product</div>
+        <div>Service</div>
+        <div>Community</div>
+    </div>
+</body>
+</html>

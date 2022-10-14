@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>예제</title>
+    <style>
+        div{
+            background-color: darkseagreen;
+            width: 80px;
+            height: 80px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            animation:mymove 2s infinite;
+            animation-direction: alternate;
+        }
+        @keyframes mymove{
+            0%{
+                transform: translate(0px, 0px);
+                background-color: darkgray;
+            }
+            50%{
+                transform: translate(50px, 50px);
+                background-color: blueviolet;
+            }
+            100%{
+                transform: translate(0px, 0px);
+                background-color: azure;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div>Animationn</div>
+</body>
+</html>

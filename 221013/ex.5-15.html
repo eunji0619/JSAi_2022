@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>예제3</title>
+    <style>
+        .triangle {
+            margin-top: 50px;
+            border-top: 150px solid transparent;
+            border-left: 150px solid blue;
+        }
+        
+        input:checked + .circle{
+            animation: move 2s infinite;
+        }
+        
+        .circle{
+            border-radius: 100%;
+            background-color: red;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+        @keyframes move{
+            0%{
+                transform: translate(0,0);
+            }
+            35%{    
+                transform: translate(0px,65px);
+            }
+            60%{
+                transform: translate(135px,200px)rotate(720deg);
+            }
+            100%{
+                transform: translate(250px,200px)rotate(900deg);
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <input type="checkbox">
+    <div class="circle">공</div>
+    <div class="triangle"></div>
+</body></html>
