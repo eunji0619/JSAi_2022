@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃</title>
+    <style>  
+        html,body{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header{
+            background-color: brown;
+            width: 310px;
+            height: 50px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+        main{
+            display: flex;
+        }
+        nav{
+            background-color: bisque;
+            width: 100px;
+            height: 230px;
+            margin-right: 10px;
+            border-radius: 10px;
+        }
+        article{
+            background-color:cornflowerblue;
+            width: 200px;
+            height: 230px;
+            border-radius: 10px;
+        }
+        footer{
+            background-color:cadetblue;
+            width: 310px;
+            height: 50px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header></header>
+        <main>
+                <nav></nav>
+                <article></article>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제1</title>
+    <style>
+        html,
+        body{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            /* justify-content: center; */
+            /* align-items: center; */
+        }
+        header{
+            background-color:orange;
+            width: 530px;
+            height: 50px;
+            color:white;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+        }
+        main{
+            display: flex;
+        }
+        nav{
+            white-space: pre-wrap;
+            background-color:beige;
+            width: 120px;
+            height: 300px;
+        }
+        article{
+            background-color:skyblue;
+            display: flex;
+            flex-direction: column;
+            width: 260px;
+            height: 110px;
+            font-size: 13px;
+            padding: 20px;
+        }
+        footer{
+            background-color: cadetblue;
+            width: 530px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <header><strong>Musee d'Orsay</strong></header>
+            <main>
+                <nav>
+                    <strong>ARTIST</strong>
+                    <a href="#">작가의 작품</a> 
+                    <a href="#">작가의 시대</a>
+                    <a href="#">작가의 일상</a>  
+                </nav>
+                <div>
+                    <article>
+                        <a href="#">피리부는 소년</a> 
+                        <a href="#">고흐의 방</a> 
+                        <a href="#">흰색 그리스도가 있는 화가의 자화상</a> 
+                        <a href="#">오페라좌의 관현악단</a> 
+                        <a href="#">??</a> 
+                        <a href="#">제비꽃 장식을 단 베르트모리즈</a> 
+                    </article>
+                    <article>
+                        <a href="#">피리부는 소년</a> 
+                        <a href="#">고흐의 방</a> 
+                        <a href="#">흰색 그리스도가 있는 화가의 자화상</a> 
+                        <a href="#">오페라좌의 관현악단</a> 
+                        <a href="#">??</a> 
+                        <a href="#">제비꽃 장식을 단 베르트모리즈</a>
+                    </article>
+                </div>
+                <nav><strong>전세계인들에게 제일 사랑받는 서양미술사의 시대</strong>
+                   <a href="#">Workshop Go</a> 
+                   <a href="#">Summer Exhibition</a>
+                   <a href="#">Ra Collection</a>
+                </nav>
+            </main>
+            <footer>2018 Les du Musee d'Orsay. All rights reserved.</footer>
+        </div>
+</body>
+</html>
