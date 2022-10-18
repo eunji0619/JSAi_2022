@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>체크박스 응용</title>
+    <style>
+        input:checked + label {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- div>h2+input#hint{임시$}*3 -->
+    <div>
+        <h2>기존 체크 박스</h2>
+        <input type="checkbox" id="hint">힌트포함</input>
+        <input type="checkbox" id="img">이미지포함</input>
+        <input type="checkbox" id="exp">설명포함</input>
+    </div>  
+    <hr>
+    <div>
+        <h2>클릭영역을 확장한 체크박스</h2>
+        <label for="hint1">
+            <input type="checkbox" id="hint1">하나, 둘, 셋 (어이)</input>
+        </label>
+        <label for="img1">
+            <input type="checkbox" id="img1">ILLELLA</input>
+        </label>
+        <label for="exp1">
+            <input type="checkbox" id="exp1">L.I.E.C</input>
+        </label>
+    </div>
+    <hr>
+    <div>
+        <h2>클릭 영역을 확장한 체크박스(커서추가)</h2>
+        <label style="cursor: pointer" for="hint2">
+            <input type="checkbox" id="hint2">하나, 둘, 셋 (어이)</input>
+        </label>
+        <label style="cursor: pointer" for="img2">
+            <input type="checkbox" id="img2">ILLELLA</input>
+        </label>
+        <label style="cursor: pointer" for="exp2">
+            <input type="checkbox" id="exp2">L.I.E.C</input>
+        </label>
+    </div>
+</body>
+</html>

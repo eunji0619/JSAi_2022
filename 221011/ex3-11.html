@@ -5,25 +5,23 @@
     <title>속성선택자</title>
     <style>
         h3[class] {
-            color: red
+            color: wheat;
         }
+        /* 해당속성 */
+        p[class="ipage"] {color: aqua} 
 
-         p[class="ipage"] {color: aqua} 해당속성
-        p[class~="i"]{color: aqua}공백포함
+        /* 공백포함 */
+        p[class~="i"]{color:red}
+/* 
+        /* 첫글자  */
+        p[class^="i"] {color: aqua}
 
-        p[class^="i"] {
-            color: aqua
-        }
+        /* 끝글자 */
+        p[class$="i"] {color: aqua}
 
-        첫글자 p[class$="i"] {
-            color: aqua
-        }
+        /* 해당글자 다 포함 적용 */
+        p[class*="i"] {color: aqua} 
 
-        끝글자 p[class*="i"] {
-            color: aqua
-        }
-
-        해당글자 다 포함 적용
     </style>
 </head>
 
@@ -37,9 +35,4 @@
     <p class="screeni">건강기록부를 작성합니다</p>
     <p class="i love u">금전출납부를 작성합니다</p>
     <p class="i-1">손익계산서를 작성합니다</p>
-
-
-
-
-
 </body></html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hamburgur</title>
+    <style>
+        :root{
+            --body-bg:white;
+            --hamburger-bg: white;
+        }
+        html,
+        body{
+            height: 100%;
+        }
+        body{
+            background: var(--body-bg);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hamburger-title{
+            color: crimson;
+            font-size: 18px;
+            padding-bottom: 10px;
+        }
+        .hamburger-container{
+            width: 100px;
+            height: 100px;
+            background: var(--hamburger-bg);
+            display: inline-block;
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .hamburger{
+            width: 100%;
+            height: 10px;
+            background: crimson;
+            top: 50%;
+        }
+        /* 한개의 선을 기준으로 위아래를 복사*/
+        .hamburger::before,
+        .hamburger::after{
+            content: "";
+        }
+        .hamburger,
+        .hamburger::before,
+        .hamburger::after{
+            /* css3는 ::를 사용, 속성느낌이 들어 ::두개로 나누어줌 */
+            position: absolute;
+            width: 100%;
+            height: 10px;
+            background: crimson;
+            transition: 0.5s;
+        }
+        .hamburger::before{
+            top: -30px;
+        }
+        .hamburger::after{
+            top: 30px;
+        }
+        .toggle:checked ~ .hamburger::after{
+            top: 0;
+            /* transform: rotate(225deg); */
+            transform: rotate(90deg);
+        }
+        .toggle:checked ~ .hamburger::before{
+            top: 0;
+            /* transform: rotate(135deg); */
+            transform: rotate(180deg);
+        }
+        .toggle:checked ~ .hamburger{
+            background: var(--hamburger-bg);
+        }
+        .toggle{
+            opacity: 0;
+            /* 체크박스를 투명하게 함 */
+        }
+    </style>
+</head>
+<body>
+    <span class="hamburger-title">My hamburger</span>
+    <label>
+        <div class="hamburger-container">
+            <input type="checkbox" class="toggle">
+            <div class="hamburger"></div>
+        </div>
+    </label>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ea repudiandae laboriosam velit hic maiores sequi repellat dicta suscipit eius enim voluptatum. Beatae ipsam fuga porro maiores accusamus sit officiis!</div>
+</body>
+</html>
