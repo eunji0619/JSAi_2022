@@ -10,37 +10,49 @@
         .card{
             background-color: #fff;
             width: 300px;
-            height: 400px;
+            height: 300px;
             border-radius: 10px;
+            overflow: hidden;
         }
         .banner{
-            background-image: url("../img/logo1.png");
+            background-image: url("../img/logo.png");
             display: flex;
             justify-content: center;
+            height: 120px;
         }
         .profile{
-            width: 80px;
-            height: 80px;
+            width: 90px;
+            height: 90px;
             background-image: url("../img/logo1.png");
+            background-size: 95px;
             border-radius: 50%;
-            transform: translateY(50%);
+            transform: translateY(75%);
             box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
         }
         .name{
             font-weight: bolder;
             text-align: center;
-            margin-top: 60px;
+            margin-top: 50px;
         }
         .follow-btn{
             display: flex;
             flex-direction: column;
-            padding: 10px;
+            padding: 0 25px;
         }
         .follow-btn button{
-            margin-top: 10px;
-            padding: 10px;
+            margin-top: 15px;
+            padding: 8px;
             background-color: antiquewhite;
             border-radius: 10px;
+        }
+        .follow-btn button:hover{
+            transform: scale(1.1);
+        }
+        .desc{
+            padding: 20px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
     </style>
 </head>
@@ -51,7 +63,7 @@
         </div>
         <div class="name">Eunji</div>
         <div class="follow-btn">
-            <button>Follow</button>
+            <button onclick="alert('follow가 완료되었습니다.')">Follow</button>
         </div>
         <div class="desc">그룹 이름인 마마무(Mamamoo)는 '세상에 태어난 아기들이 가장 먼저 옹알이하고 친숙하게 느끼는 '엄마'라는 의미의 단어 '마마(Mama)'처럼 전세계 모든 사람들에게 친숙한 음악을 하겠다'는 뜻. </div>
 </body>
