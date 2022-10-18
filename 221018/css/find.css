@@ -1,0 +1,67 @@
+.find-search-bar-form{
+    padding: 0 25px;
+    /* 검색바 간격 조정 */
+}
+.find-search-bar-form div{
+    width: 100%; 
+    /* 검색바 길이 조정 */
+}
+.find-search-bar {
+    margin-top: 50px;
+    background-color: var(--darkpurple);
+    border-radius: 25px;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    transition: background-color 0.3s ease-in-out; 
+}
+.find-search-bar:focus{
+    background-color: #594374;
+}
+.find-search-bar-form span{
+    position: absolute;
+    font: 1rem;
+    bottom: 0.5rem;
+    right: 25px;
+}
+.best-movie__img-container{
+    padding: 0 20px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.best-movie__img{
+    width: 22rem;
+    height: 12rem;
+    border-radius: 20px;
+}
+.best-movie__img-container span{
+    position: absolute;
+    background-color: var(--purple);
+    border-radius: 50%;
+    /* right: calc(40%); */
+    left: calc(50%+1rem);
+    font-size: 4rem;
+    bottom: 6rem;
+}
+.best-movie__title{
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+}
+.best-movie__promotion-title{
+    display: flex;
+    font-size: 14px;
+}
+ .best-movie__promotion-text{
+    display: flex;
+    justify-content: center;
+} 
+.best-movie__movie-name{
+    display: flex;
+    justify-content: center;
+    color: var(--purple);
+    font-size: 40px;
+    font-weight: 600;
+}

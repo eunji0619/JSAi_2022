@@ -1,0 +1,28 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap'); */
+@import "./reset.css";
+@import "./variable.css";
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+*{
+    box-sizing: border-box;
+    /* 모든 요소를 화면 안에 포함시킴 */
+}
+body{
+    font-family: 'Dongle', sans-serif;
+    background-color: var(--background-purple);
+    color: white;
+}
+input{
+    border: none;
+    outline: none;
+    appearance: none;
+}
+.display-flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.position-relative{
+    position: relative;
+}

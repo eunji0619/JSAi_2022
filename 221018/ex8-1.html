@@ -5,11 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>뉴플릭스 만들기(로그인)</title>
+    <!-- <link rel="stylesheet" href="./css/global.css"> -->
+    <link rel="stylesheet" href="./css/login.css">
     <style> 
-
+        .login-title{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .login-title__maintext{
+            font-size: 3rem;
+            color: var(--purple);
+        }
+        .login-title__subtext{
+            font-size: 1.5rem;
+            font-weight: 100;
+        }
+        html,
+        body{
+            overflow: hidden;
+            flex-direction: column;
+        }
+        body>div{
+            display: flex;
+            justify-content: center;
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            margin: 1.5rem;
+        }
+        .login-form input{
+            padding: 15px 0;
+            margin: 0 10px;
+            border: none;
+            outline: none;
+            appearance: none;
+            background-color: var(--background-purple);
+            font-size: 1em;
+        }
+        .login-form input:not([type="submit"]){
+            color: white;
+            border-bottom: 1px solid var(--border);
+            transition: border-color 0.3s ease-in-out;
+        }
+        .login-form input:focus{
+            border-color: white;
+        }
+        .login-form input[type="submit"]{
+            color: white;
+            background-color: var(--darkpurple);
+            border-radius: 20px;
+            margin-top: 2rem;
+            transition: background-color 0.2s ease-in-out;
+        }
+        .login-form input[type="submit"]:active{
+            background-color: var(--purple);
+        }
+       
     </style>
 </head>
 <body>
-    
+    <!-- <img src="../img/bg.png" alt="마마무 전체사진" class="login-img" 
+    width="300px" height="200px"> -->
+
+    <div>
+    <img src="bg.png" alt="마마무 전체사진" width="800px" height="550px">
+    <!-- / 최상위    ./ = 현재 -> 생략가능      ../한단계 위-->
+    </div>
+
+    <div class="login-title">
+        <h1 class="login-title__maintext">Newfilx</h1>
+        <p class="login-title__subtext">새로운 OTT 뉴플릭스 등장! <br>
+            지금가입하면 무료!
+        </p>
+    </div>
+    <form action="find.html" class="login-form">
+        <input type="text" name="username" autocomplete="off" placeholder="ID" required>
+        <!-- placeholder는 hint -->
+        <input type="password" name="password" autocomplete="off" placeholder="PASSWORD" required>
+        <!-- 비밀번호는 자동으로 autocomplete가 됨 -->
+        <input type="submit" value="접속하기">
+    </form>
 </body>
 </html>
