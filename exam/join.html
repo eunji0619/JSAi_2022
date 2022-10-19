@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h3>회원가입</h3>
+    <form action="done.html">
+        <label for="userid">아이디
+            <input type="text" id="userid" required ></label><br>
+        <label for="password">비밀번호
+            <input type="password" id="password" required></label><br>
+        <label for="pw_check">비밀번호 확인
+            <input type="password" id="pw_check" required></label><br>
+        <label for="birth">생년월일
+            <input type="text" id="birth" placeholder="000423" pattern="[0-9]{6}" required></label><br>
+        <label for="name">이름
+            <input type="text" id="name" pattern="[가-힣]{2}|[가-힣]{3}" required></label><br>
+        <label for="phone">전화번호
+            <input id="btn" type="text" id="phone" required></label><br>
+        <input type="submit" value="회원가입">
+
+        <form id ="btn" action="#">
+            <input type="submit" value="정보수정">
+        </form>
+    </form>
+    
+</body>
+</html>

@@ -42,7 +42,7 @@
 }
 .continue-watching__header{
     /* margin-bottom: 15px; */
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 .continue-watching__imges li{
     margin-left: 5px;
@@ -79,6 +79,9 @@
     padding-left: 20px;
 }
 .wishlist__title{
+    font-size: 1.7rem;
+}
+.wishlist__subtitle{
     font-size: 1.3rem;
 }
 .wishlist-play-btn span{
@@ -86,13 +89,16 @@
     border-radius: 50%;
     opacity: 0.9;
     font-size: 3rem;
+    margin-top: 10px;
 }
 .wishlist{
     padding: 0 20px 10px 20px;
 }
 .wishlist-item img{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    margin-top: 5px;
 }
 .wishlist__header{
     font-size: 1.3rem;
