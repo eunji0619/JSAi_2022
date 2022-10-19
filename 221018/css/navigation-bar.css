@@ -1,0 +1,19 @@
+.navigation-bar{
+    background-color: rgba(255, 255, 255, 0.5);
+    /* 255=f */
+    width: 8rem;
+    height: 3rem;
+    border-radius: 0 10px 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: flex;
+    bottom: 0;
+}
+.navigation-bar span{
+    color: black;
+    font-size: 1.5rem;
+}
+.find-icon-clicked:hover{
+    font-weight: 600;
+}
